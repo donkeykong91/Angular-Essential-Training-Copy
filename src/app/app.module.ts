@@ -1,17 +1,18 @@
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-import { AppComponent } from './app.component';
+import { Component } from '@angular/core';
 
-@NgModule({
-    imports: [
-        BrowserModule
-    ],
-    declarations: [
-        AppComponent
-    ],
-    bootstrap: [
-        AppComponent
-    ]
+@Component({
+  selector: 'mw-app',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css']
 })
-
-export class AppModule {}
+export class AppComponent {
+  firstMediaItem = {
+    id: 1,
+    name: 'Firebug',
+    medium: 'Series',
+    category: 'Science Fiction',
+    year: 2010,
+    watchedOn: 1294166565384,
+    isFavorite: false
+  };
+}
